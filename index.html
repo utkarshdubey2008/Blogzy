@@ -3,14 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Static Blog</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Blogzy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .featured {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .featured article {
+            flex: 1 1 calc(30% - 40px);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .featured article img {
+            width: 100%;
+            height: auto;
+        }
+        .featured article h3 {
+            margin: 0;
+            padding: 15px;
+            font-size: 1.2em;
+            background: #333;
+            color: #fff;
+        }
+        .featured article p {
+            padding: 0 15px 15px;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Blog</h1>
+        <h1>Blogzy</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Crypto</a></li>
                 <li><a href="#">Finance</a></li>
@@ -19,19 +83,36 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Recent Posts</h2>
-            <div class="post-preview">
-                <img src="https://envs.sh/60h.jpg" alt="Bitcoin">
-                <div class="post-info">
-                    <h3><a href="crypto/bitcoin.html">Bitcoin</a></h3>
-                    <p>Bitcoin is a decentralized digital currency...</p>
-                </div>
-            </div>
+        <section class="featured">
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Trump's Meme Coin">
+                <h3><a href="trumps-meme-coin.html">Trump's Meme Coin Sparks Over 700 Copycats</a></h3>
+                <p>Following the launch of President Donald Trump's meme coin, $Trump, in January, more than 700 imitation cryptocurrencies have emerged...</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Coinbase Lawsuit">
+                <h3><a href="coinbase-lawsuit.html">Coinbase Faces Lawsuit Over Unregistered Securities</a></h3>
+                <p>A U.S. District Judge in Manhattan ruled that Coinbase must face a lawsuit alleging the exchange illegally sold unregistered securities...</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Haliey Welch Crypto Scandal">
+                <h3><a href="haliey-welch-crypto-scandal.html">Haliey Welch Addresses Crypto Scandal</a></h3>
+                <p>Known as the "Hawk Tuah girl," Haliey Welch broke her silence after a two-month absence, addressing the collapse of her crypto coin, $HAWK token...</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="Younger Investors Crypto">
+                <h3><a href="younger-investors-crypto.html">Younger Investors Gravitate Towards Risky Crypto Investments</a></h3>
+                <p>Younger Americans are investing earlier than previous generations, with many drawn to high-risk products like options, margin trading, and cryptocurrencies...</p>
+            </article>
+            <article>
+                <img src="https://via.placeholder.com/800x400" alt="SEC Reassigns Litigator">
+                <h3><a href="sec-reassigns-litigator.html">SEC Reassigns Top Litigator Amid Crypto Legal Battles</a></h3>
+                <p>The Securities and Exchange Commission has reassigned Jorge Tenreiro, its top litigator involved in significant lawsuits against crypto exchanges...</p>
+            </article>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 My Blog</p>
+        <p>&copy; 2025 Blogzy</p>
     </footer>
 </body>
 </html>
