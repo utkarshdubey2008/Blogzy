@@ -1,21 +1,16 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #d4af37;
+    background: #333;
     color: #ffffff;
-    padding: 10px 0;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
+    padding: 1em 0;
 }
 
 nav ul {
@@ -34,12 +29,56 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding: 20px;
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
 }
 
-h2 {
-    color: #333333;
+.slider img {
+    width: 100%;
+    display: none;
+}
+
+.slider img:first-child {
+    display: block;
+}
+
+button.prev, button.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+}
+
+button.prev {
+    left: 0;
+}
+
+button.next {
+    right: 0;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
 }
 
 .post-preview {
@@ -57,24 +96,14 @@ h2 {
     border-radius: 5px;
 }
 
-.post-info h3 {
+.post-preview h3 {
     margin: 0;
     font-size: 1.5em;
 }
 
-.post-info p {
+.post-preview p {
     margin: 5px 0 0;
     color: #666666;
-}
-
-footer {
-    background: #d4af37;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 a:hover {
