@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinbase Faces Lawsuit Over Unregistered Securities - Blogzy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            overflow: hidden;
+            text-align: center;
+        }
+        .slider img {
+            width: 100%;
+            display: none;
+        }
+        .slider img:first-child {
+            display: block;
+        }
+        button.prev, button.next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            user-select: none;
+        }
+        button.prev {
+            left: 0;
+        }
+        button.next {
+            right: 0;
+        }
+        button.prev:hover, button.next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coinbase Faces Lawsuit Over Unregistered Securities</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Crypto</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">Technology</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="slider">
+                <img src="https://via.placeholder.com/800x400" alt="Image 1">
+                <img src="https://via.placeholder.com/800x400" alt="Image 2">
+            </div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+            <h2>Coinbase Faces Lawsuit Over Unregistered Securities</h2>
+            <p>A U.S. District Judge in Manhattan ruled that Coinbase must face a lawsuit alleging the exchange illegally sold unregistered securities. The lawsuit claims that transactions were directly with Coinbase, making it a seller under federal securities laws.</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blogzy</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.slider img');
+            const prev = document.querySelector('button.prev');
+            const next = document.querySelector('button.next');
+            let currentImageIndex = 0;
+
+            function showImage(index) {
+                images.forEach((img, idx) => {
+                    img.style.display = idx === index ? 'block' : 'none';
+                });
+            }
+
+            showImage(currentImageIndex);
+
+            prev.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                showImage(currentImageIndex);
+            });
+
+            next.addEventListener('click', () => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                showImage(currentImageIndex);
+            });
+        });
+    </script>
+</body>
+</html
